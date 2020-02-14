@@ -1,11 +1,13 @@
+#将图片放入py同一文件夹
+
 import PyPDF2, os
  
-#建立一个装pdf文件的数组
+#建立一个装pdf文件的列表
 pdfFiles = []
  
 for fileName in os.listdir('.'):    #遍历该程序所在文件夹内的文件
     if fileName.endswith('.pdf'):   #找到以.pdf结尾的文件
-        pdfFiles.append(fileName)   #将pdf文件装进pdfFiles数组内
+        pdfFiles.append(fileName)   #将pdf文件装进pdfFiles列表内
  
 pdfFiles.sort()     #文件排序
  
