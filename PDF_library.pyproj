@@ -5,12 +5,12 @@
     <ProjectGuid>9e4c4ba7-7287-4be1-b0d0-18fc6cbbf78a</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>多个PDF合成PDF.py</StartupFile>
+    <StartupFile>n PDF to 1 PDF.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>多个PDF合成一个PDF</Name>
+    <Name>PDF_library</Name>
     <RootNamespace>多个PDF合成</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -22,10 +22,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="多张图片合成PDF.py">
+    <Compile Include="PDF_watermark.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="多个PDF合成PDF.py" />
+    <Compile Include="n img to 1 PDF.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="n PDF to 1 PDF.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
